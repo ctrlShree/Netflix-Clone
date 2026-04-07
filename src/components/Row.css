@@ -1,0 +1,64 @@
+.row {
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+.row__title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #e5e5e5;
+  margin-bottom: 12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.row__posters {
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 20px 0;
+  scroll-behavior: smooth;
+}
+
+.row__posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row__poster {
+  width: 250px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.row__poster:hover {
+  transform: scale(1.08);
+}
+
+.row__poster--large {
+  width: 180px;
+  height: 270px;
+}
+
+.row__poster--large:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .row {
+    margin-left: 20px;
+  }
+  
+  .row__poster {
+    width: 180px;
+    height: 100px;
+  }
+  
+  .row__poster--large {
+    width: 140px;
+    height: 210px;
+  }
+}
