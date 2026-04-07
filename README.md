@@ -16,4 +16,4 @@ A Netflix clone built with React.js and TMDB API.
 [Coming soon]
 
 ## Screenshot
-[Add screenshot here]
+[Coming soon]
